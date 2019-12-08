@@ -7,7 +7,7 @@
 If it is first time using this module, reading resources below in order is recommended:
 
 1. [Add strapi & auth & axios modules](./guide/setup.md)
-5. [Use `$strapi` service](./api/auth.md)
+5. [Use `$strapi`](./api/properties.md)
 
 ## More Resources
 
