@@ -1,0 +1,13 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "author": "Thibaut DAVID (Stun3R)",
+  "dependencies": {},
+  "devDependencies": {
+    "vuepress": "^1.2.0",
+    "vuepress-plugin-element-tabs": "^0.1.8"
+  }
+}
