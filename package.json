@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-strapi-sdk",
+  "name": "@stun3r/nuxt-strapi-sdk",
   "version": "0.1.1",
   "description": "Easy integration Strapi with Nuxt.js",
   "license": "MIT",
@@ -29,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/Stun3R/nuxt-strapi-sdk/issues"
   },
-  "homepage": "https://github.com/Stun3R/nuxt-strapi-sdk#readme",
+  "homepage": "https://strapi-sdk-nuxtjs.netlify.com/",
   "eslintIgnore": [
     "lib/module/plugin.js",
     "examples"
