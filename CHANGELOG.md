@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/Stun3R/nuxt-strapi-sdk/compare/v0.1.3...v0.1.4) (2019-12-10)
+
+
+### Others
+
+* **github:** adding Pull Request template ([cd9a3bb](https://github.com/Stun3R/nuxt-strapi-sdk/commit/cd9a3bbacfbe7db70623700249efb9e5794a6d70))
+
 ### [0.1.3](https://github.com/Stun3R/nuxt-strapi-sdk/compare/v0.1.2...v0.1.3) (2019-12-10)
 
 
