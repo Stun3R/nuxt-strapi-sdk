@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-strapi-sdk",
+  "name": "@stun3r/nuxt-strapi-sdk",
   "version": "0.1.1",
   "description": "Easy integration Strapi with Nuxt.js",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "lint-fix": "eslint --fix lib test",
     "test": "rm -rf examples/api/.cache && npm run lint && jest",
     "commit": "git-cz",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish"
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish --access public"
   },
   "keywords": [
     "strapi",
