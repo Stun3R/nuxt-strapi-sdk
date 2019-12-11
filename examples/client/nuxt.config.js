@@ -17,7 +17,7 @@ module.exports = {
     { src: '@/assets/scss/main.scss', lang: 'scss' }
   ],
   axios: {
-    baseURL: 'https://strapi-host-tests.herokuapp.com'
+    baseURL: 'http://localhost:1337'
   },
   auth: {
     redirect: {
