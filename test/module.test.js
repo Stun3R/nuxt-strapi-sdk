@@ -3,11 +3,20 @@ const sinon = require('sinon')
 const FormData = require('form-data')
 
 describe('Strapi Sdk', () => {
-  let nuxt
+  let nuxt, window, strapi, axios, axiosRequest
 
   beforeAll(async () => {
     ({ nuxt } = (await setup(loadConfig(__dirname, 'basic'))))
   }, 60000)
+
+  beforeEach(async () => {
+    window = await nuxt.renderAndGetWindow(url('/'))
+    strapi = window.$nuxt.$strapi
+    axios = window.$nuxt.$axios
+    axiosRequest = sinon.stub(axios, 'request').resolves({
+      data: {}
+    })
+  })
 
   afterAll(async () => {
     await nuxt.close()
@@ -37,13 +46,6 @@ describe('Strapi Sdk', () => {
     })
 
     test('register', async () => {
-      const window = await nuxt.renderAndGetWindow(url('/'))
-      const strapi = window.$nuxt.$strapi
-      const axios = window.$nuxt.$axios
-      const axiosRequest = sinon.stub(axios, 'request').resolves({
-        data: {}
-      })
-
       axiosRequest.resolves({
         data: {
           jwt: 'foo',
@@ -69,13 +71,6 @@ describe('Strapi Sdk', () => {
     })
 
     test('login', async () => {
-      const window = await nuxt.renderAndGetWindow(url('/'))
-      const strapi = window.$nuxt.$strapi
-      const axios = window.$nuxt.$axios
-      const axiosRequest = sinon.stub(axios, 'request').resolves({
-        data: {}
-      })
-
       axiosRequest.resolves({
         data: {
           jwt: 'foo',
@@ -96,13 +91,6 @@ describe('Strapi Sdk', () => {
     })
 
     test('logout', async () => {
-      const window = await nuxt.renderAndGetWindow(url('/'))
-      const strapi = window.$nuxt.$strapi
-      const axios = window.$nuxt.$axios
-      const axiosRequest = sinon.stub(axios, 'request').resolves({
-        data: {}
-      })
-
       axiosRequest.resolves({
         data: {
           jwt: 'foo',
@@ -127,13 +115,6 @@ describe('Strapi Sdk', () => {
     })
 
     test('Forgot Password', async () => {
-      const window = await nuxt.renderAndGetWindow(url('/'))
-      const strapi = window.$nuxt.$strapi
-      const axios = window.$nuxt.$axios
-      const axiosRequest = sinon.stub(axios, 'request').resolves({
-        data: {}
-      })
-
       await strapi.forgotPassword('foo@bar.com')
 
       expect(axiosRequest.calledWithExactly({
@@ -146,13 +127,6 @@ describe('Strapi Sdk', () => {
     })
 
     test('Reset Password', async () => {
-      const window = await nuxt.renderAndGetWindow(url('/'))
-      const strapi = window.$nuxt.$strapi
-      const axios = window.$nuxt.$axios
-      const axiosRequest = sinon.stub(axios, 'request').resolves({
-        data: {}
-      })
-
       await strapi.resetPassword('code', 'password', 'confirm')
 
       expect(axiosRequest.calledWithExactly({
@@ -169,13 +143,6 @@ describe('Strapi Sdk', () => {
 
   describe('Entries', () => {
     test('Get Entries', async () => {
-      const window = await nuxt.renderAndGetWindow(url('/'))
-      const strapi = window.$nuxt.$strapi
-      const axios = window.$nuxt.$axios
-      const axiosRequest = sinon.stub(axios, 'request').resolves({
-        data: {}
-      })
-
       await strapi.getEntries('users', {
         _sort: 'email:asc'
       })
@@ -190,13 +157,6 @@ describe('Strapi Sdk', () => {
     })
 
     test('Get Entry Count', async () => {
-      const window = await nuxt.renderAndGetWindow(url('/'))
-      const strapi = window.$nuxt.$strapi
-      const axios = window.$nuxt.$axios
-      const axiosRequest = sinon.stub(axios, 'request').resolves({
-        data: {}
-      })
-
       await strapi.getEntryCount('users', {
         username_contains: 'john'
       })
@@ -211,13 +171,6 @@ describe('Strapi Sdk', () => {
     })
 
     test('Get Entry', async () => {
-      const window = await nuxt.renderAndGetWindow(url('/'))
-      const strapi = window.$nuxt.$strapi
-      const axios = window.$nuxt.$axios
-      const axiosRequest = sinon.stub(axios, 'request').resolves({
-        data: {}
-      })
-
       await strapi.getEntry('users', 'id')
 
       expect(axiosRequest.calledWithExactly({
@@ -227,13 +180,6 @@ describe('Strapi Sdk', () => {
     })
 
     test('Create entry', async () => {
-      const window = await nuxt.renderAndGetWindow(url('/'))
-      const strapi = window.$nuxt.$strapi
-      const axios = window.$nuxt.$axios
-      const axiosRequest = sinon.stub(axios, 'request').resolves({
-        data: {}
-      })
-
       await strapi.createEntry('users', {
         foo: 'bar'
       })
@@ -248,13 +194,6 @@ describe('Strapi Sdk', () => {
     })
 
     test('Update entry', async () => {
-      const window = await nuxt.renderAndGetWindow(url('/'))
-      const strapi = window.$nuxt.$strapi
-      const axios = window.$nuxt.$axios
-      const axiosRequest = sinon.stub(axios, 'request').resolves({
-        data: {}
-      })
-
       await strapi.updateEntry('users', 'id', {
         foo: 'bar'
       })
@@ -269,13 +208,6 @@ describe('Strapi Sdk', () => {
     })
 
     test('Delete entry', async () => {
-      const window = await nuxt.renderAndGetWindow(url('/'))
-      const strapi = window.$nuxt.$strapi
-      const axios = window.$nuxt.$axios
-      const axiosRequest = sinon.stub(axios, 'request').resolves({
-        data: {}
-      })
-
       await strapi.deleteEntry('users', 'id')
 
       expect(axiosRequest.calledWithExactly({
@@ -287,13 +219,6 @@ describe('Strapi Sdk', () => {
 
   describe('Files', () => {
     test('Search Files', async () => {
-      const window = await nuxt.renderAndGetWindow(url('/'))
-      const strapi = window.$nuxt.$strapi
-      const axios = window.$nuxt.$axios
-      const axiosRequest = sinon.stub(axios, 'request').resolves({
-        data: {}
-      })
-
       await strapi.searchFiles('foo')
 
       expect(axiosRequest.calledWithExactly({
@@ -303,13 +228,6 @@ describe('Strapi Sdk', () => {
     })
 
     test('Get Files', async () => {
-      const window = await nuxt.renderAndGetWindow(url('/'))
-      const strapi = window.$nuxt.$strapi
-      const axios = window.$nuxt.$axios
-      const axiosRequest = sinon.stub(axios, 'request').resolves({
-        data: {}
-      })
-
       await strapi.getFiles({
         _sort: 'size:asc'
       })
@@ -324,12 +242,6 @@ describe('Strapi Sdk', () => {
     })
 
     test('Get file', async () => {
-      const window = await nuxt.renderAndGetWindow(url('/'))
-      const strapi = window.$nuxt.$strapi
-      const axios = window.$nuxt.$axios
-      const axiosRequest = sinon.stub(axios, 'request').resolves({
-        data: {}
-      })
       await strapi.getFile('id')
 
       expect(axiosRequest.calledWithExactly({
@@ -339,12 +251,6 @@ describe('Strapi Sdk', () => {
     })
 
     test('Upload file on Node.js', async () => {
-      const window = await nuxt.renderAndGetWindow(url('/'))
-      const strapi = window.$nuxt.$strapi
-      const axios = window.$nuxt.$axios
-      const axiosRequest = sinon.stub(axios, 'request').resolves({
-        data: {}
-      })
       const form = new FormData()
       form.append('files', 'foo', 'file-name.ext')
       await strapi.upload(form)
