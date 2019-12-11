@@ -18,9 +18,9 @@
     "lint-fix": "eslint --fix lib test",
     "test": "rm -rf examples/api/.cache && npm run lint && jest",
     "commit": "git-cz",
-    "release": "standard-version && git push --follow-tags origin master && yarn publish",
-    "release:major": "standard-version -- --release-as major && git push --follow-tags origin master && yarn publish",
-    "release:minor": "standard-version -- --release-as minor && git push --follow-tags origin master && yarn publish"
+    "release": "standard-version && git push --follow-tags origin master && npm publish",
+    "release:major": "standard-version -- --release-as major && git push --follow-tags origin master && npm publish",
+    "release:minor": "standard-version -- --release-as minor && git push --follow-tags origin master && npm publish"
   },
   "keywords": [
     "strapi",
