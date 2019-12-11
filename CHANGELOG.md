@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.4](https://github.com/Stun3R/nuxt-strapi-sdk/compare/v0.2.3...v0.2.4) (2019-12-11)
+
+
+### Bug Fixes
+
+* **npm:** try to fix publish ([8df2a4f](https://github.com/Stun3R/nuxt-strapi-sdk/commit/8df2a4f34141e7f9ad6acb6ac5fbfe7fc687548d))
+
 ### [0.2.3](https://github.com/Stun3R/nuxt-strapi-sdk/compare/v0.2.2...v0.2.3) (2019-12-11)
 
 
