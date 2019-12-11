@@ -21,7 +21,7 @@
     "release": "standard-version && yarn publish",
     "release:major": "standard-version -- --release-as major && yarn publish",
     "release:minor": "standard-version -- --release-as minor && yarn publish",
-    "publish": "git push --follow-tags origin master && npm publish"
+    "publish": "git push --follow-tags origin master && echo \"Dont forget to run npm publish\""
   },
   "keywords": [
     "strapi",
