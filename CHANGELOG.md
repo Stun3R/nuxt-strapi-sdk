@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://github.com/Stun3R/nuxt-strapi-sdk/compare/v0.2.2...v0.2.3) (2019-12-11)
+
+
+### Build System
+
+* **commit:** add pre-commit test ([4b67bcd](https://github.com/Stun3R/nuxt-strapi-sdk/commit/4b67bcd1a9ae6e7031a9b3f5aa9cd642f0d91aae))
+
 ### [0.2.2](https://github.com/Stun3R/nuxt-strapi-sdk/compare/v0.2.1...v0.2.2) (2019-12-11)
 
 
