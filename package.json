@@ -1,6 +1,6 @@
 {
   "name": "@stun3r/nuxt-strapi-sdk",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Easy integration Strapi with Nuxt.js",
   "license": "MIT",
   "main": "lib/module/index.js",
@@ -21,7 +21,7 @@
     "release": "standard-version && yarn publish",
     "release:major": "standard-version -- --release-as major && yarn publish",
     "release:minor": "standard-version -- --release-as minor && yarn publish",
-    "publish": "git push --follow-tags origin master"
+    "publish": "git push --follow-tags origin master && npm publish --access public"
   },
   "keywords": [
     "strapi",
