@@ -18,9 +18,9 @@
     "lint-fix": "eslint --fix lib test",
     "test": "rm -rf examples/api/.cache && npm run lint && jest",
     "commit": "git-cz",
-    "release": "yarn test && standard-version && yarn publish",
-    "release:major": "yarn test && standard-version -- --release-as major && yarn publish",
-    "release:minor": "yarn test && standard-version -- --release-as minor && yarn publish",
+    "release": "standard-version && yarn publish",
+    "release:major": "standard-version -- --release-as major && yarn publish",
+    "release:minor": "standard-version -- --release-as minor && yarn publish",
     "publish": "git push --follow-tags origin master"
   },
   "keywords": [
