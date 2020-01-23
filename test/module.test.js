@@ -22,19 +22,21 @@ describe('Strapi Sdk', () => {
     await nuxt.close()
   })
 
-  test('Correct Load module', async () => {
-    const window = await nuxt.renderAndGetWindow(url('/'))
+  describe('Strapi load', () => {
+    test('Correct Load module', async () => {
+      const window = await nuxt.renderAndGetWindow(url('/'))
 
-    expect(window.$nuxt.$auth).toBeDefined()
-    expect(window.$nuxt.$axios).toBeDefined()
-    expect(window.$nuxt.$strapi).toBeDefined()
-  })
+      expect(window.$nuxt.$auth).toBeDefined()
+      expect(window.$nuxt.$axios).toBeDefined()
+      expect(window.$nuxt.$strapi).toBeDefined()
+    })
 
-  test('Extend Module with Plugin', async () => {
-    const window = await nuxt.renderAndGetWindow(url('/'))
-    const flag = window.$nuxt.$strapi._custom_plugin
+    test('Extend Module with Plugin', async () => {
+      const window = await nuxt.renderAndGetWindow(url('/'))
+      const flag = window.$nuxt.$strapi._custom_plugin
 
-    expect(flag).toBe(true)
+      expect(flag).toBe(true)
+    })
   })
 
   describe('Auth', () => {
