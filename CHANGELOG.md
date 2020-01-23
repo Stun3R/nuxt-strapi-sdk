@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/Stun3R/nuxt-strapi-sdk/compare/v0.2.12...v0.3.1) (2020-01-23)
+
+
+### Bug Fixes
+
+* **request:** error handling has been modified to being able to handle response API ([6070751](https://github.com/Stun3R/nuxt-strapi-sdk/commit/607075123d2f538c571f027962fa71b806a58e99)), closes [#10](https://github.com/Stun3R/nuxt-strapi-sdk/issues/10)
+
+
+### Feature Improvements
+
+* **module loading:** remove lodash ([c010547](https://github.com/Stun3R/nuxt-strapi-sdk/commit/c010547e7d82576d7b655c70aa0c1b65b1d2d089))
+
+### [0.2.14](https://github.com/Stun3R/nuxt-strapi-sdk/compare/v0.2.12...v0.2.14) (2020-01-23)
+
+
+### Bug Fixes
+
+* **request:** error handling has been modified to being able to handle response API ([6070751](https://github.com/Stun3R/nuxt-strapi-sdk/commit/607075123d2f538c571f027962fa71b806a58e99)), closes [#10](https://github.com/Stun3R/nuxt-strapi-sdk/issues/10)
+
+
+### Feature Improvements
+
+* **module loading:** remove lodash ([c010547](https://github.com/Stun3R/nuxt-strapi-sdk/commit/c010547e7d82576d7b655c70aa0c1b65b1d2d089))
+
+### [0.2.13](https://github.com/Stun3R/nuxt-strapi-sdk/compare/v0.2.12...v0.2.13) (2020-01-23)
+
+
+### Bug Fixes
+
+* **request:** error handling has been modified to being able to handle response API ([6070751](https://github.com/Stun3R/nuxt-strapi-sdk/commit/607075123d2f538c571f027962fa71b806a58e99)), closes [#10](https://github.com/Stun3R/nuxt-strapi-sdk/issues/10)
+
+
+### Feature Improvements
+
+* **module loading:** remove lodash ([c010547](https://github.com/Stun3R/nuxt-strapi-sdk/commit/c010547e7d82576d7b655c70aa0c1b65b1d2d089))
+
 ### [0.2.12](https://github.com/Stun3R/nuxt-strapi-sdk/compare/v0.2.11...v0.2.12) (2019-12-11)
 
 
