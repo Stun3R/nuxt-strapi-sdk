@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.2](https://github.com/Stun3R/nuxt-strapi-sdk/compare/v0.3.1...v0.3.2) (2020-08-26)
+
+
+### Build System
+
+* **deps:** bump acorn from 5.7.3 to 5.7.4 ([98002bf](https://github.com/Stun3R/nuxt-strapi-sdk/commit/98002bf9b375b0b63feee8063cbb5187df2cb7b2))
+* **deps:** bump acorn from 6.4.0 to 6.4.1 in /docs ([9ec74f3](https://github.com/Stun3R/nuxt-strapi-sdk/commit/9ec74f34466647c1dbbc777e95891dffb7e05ac5))
+* **deps:** bump elliptic from 6.5.2 to 6.5.3 ([4a3936a](https://github.com/Stun3R/nuxt-strapi-sdk/commit/4a3936a8fe52c6da11538efb2bf24d84b6f7d362))
+* **deps:** bump elliptic from 6.5.2 to 6.5.3 in /docs ([4739ac6](https://github.com/Stun3R/nuxt-strapi-sdk/commit/4739ac6e43c6b7d2f74300c43671f349c5bdd428))
+* **deps:** bump lodash from 4.17.15 to 4.17.19 in /docs ([8ac76c6](https://github.com/Stun3R/nuxt-strapi-sdk/commit/8ac76c685d9726cb396b7ce80cf448b6b1f37944))
+* **deps:** bump prismjs from 1.17.1 to 1.21.0 in /docs ([4a5919f](https://github.com/Stun3R/nuxt-strapi-sdk/commit/4a5919fc3865d50944d6c441ce081169a2f85430))
+* **deps:** bump websocket-extensions from 0.1.3 to 0.1.4 in /docs ([b029076](https://github.com/Stun3R/nuxt-strapi-sdk/commit/b02907601df9e348045133247f8b6a868efa932f))
+* **deps-dev:** bump codecov from 3.6.1 to 3.6.5 ([06d3521](https://github.com/Stun3R/nuxt-strapi-sdk/commit/06d35212ba0b49f8b60296a8bacc1bfe06552ca1))
+* **deps-dev:** bump codecov from 3.6.5 to 3.7.1 ([5cb0bde](https://github.com/Stun3R/nuxt-strapi-sdk/commit/5cb0bde281ae41d2fd02e08ba3847150a92f4674))
+* **deps-dev:** bump standard-version from 7.0.1 to 8.0.1 ([25bde98](https://github.com/Stun3R/nuxt-strapi-sdk/commit/25bde98cd20ef76265dd75243039da79d552642c))
+
 ### [0.3.1](https://github.com/Stun3R/nuxt-strapi-sdk/compare/v0.2.12...v0.3.1) (2020-01-23)
 
 
