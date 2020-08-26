@@ -1,6 +1,6 @@
 {
   "name": "@stun3r/nuxt-strapi-sdk",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Easy integration Strapi with Nuxt.js",
   "license": "MIT",
   "main": "lib/module/index.js",
