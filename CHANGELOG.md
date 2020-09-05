@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.4](https://github.com/Stun3R/nuxt-strapi-sdk/compare/v0.3.3...v0.3.4) (2020-09-05)
+
+
+### Build System
+
+* **deps:** bump node-sass from 4.13.0 to 4.14.1 in /docs ([5461b0d](https://github.com/Stun3R/nuxt-strapi-sdk/commit/5461b0d146a7e4a252191538ce3384f60b7b8f49))
+* **deps-dev:** bump node-sass from 4.13.0 to 4.13.1 ([ca6d8e3](https://github.com/Stun3R/nuxt-strapi-sdk/commit/ca6d8e3a33551342ca1a8bb751962fa58ac0eb77))
+
 ### [0.3.3](https://github.com/Stun3R/nuxt-strapi-sdk/compare/v0.3.2...v0.3.3) (2020-08-26)
 
 ### [0.3.2](https://github.com/Stun3R/nuxt-strapi-sdk/compare/v0.3.1...v0.3.2) (2020-08-26)
